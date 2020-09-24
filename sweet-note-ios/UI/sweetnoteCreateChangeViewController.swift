@@ -14,7 +14,7 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
     private(set) var changingsweetnote : sweetnote?
     
     // Create list for category dropdown
-    var categoryList = ["Education", "List", "Reminder", "Other"]
+    var categoryList = ["Education", "Ideas", "Information", "Inspiration", "Lifestyle", "Lists", "Personal", "Recipes", "Reminders", "Other"]
     
     // Category picker view functions
     public func numberOfComponents(in pickerView: UIPickerView) -> Int{
@@ -34,10 +34,9 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
 
     @IBAction func noteCategoryDidBeginEditing(_ sender: UITextField) {
         self.noteCategoryPicker.isHidden = false
-        self.noteCategoryPicker.layer.cornerRadius = 4
-        self.noteCategoryPicker.setValue(UIColor.lightGray, forKey: "backgroundColor")
-        //if you don't want the users to see the keyboard type:
-        sender.endEditing(true)
+        self.noteCategoryPicker.layer.cornerRadius = 2
+        self.noteCategoryPicker.layer.backgroundColor = UIColor(red: 0.92, green: 0.92, blue: 0.92, alpha: 0.8).cgColor
+        
     }
     
     // Note title changed function
@@ -56,12 +55,12 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
     }
     
     @IBAction func doneButtonClicked(_ sender: UIButton, forEvent event: UIEvent) {
-        // distinguish change mode and create mode
+        // Distinguish between create and change
         if self.changingsweetnote != nil {
-            // change mode - change the item
+            // Change mode; change the item
             changeItem()
         } else {
-            // create mode - create the item
+            // Create mode; create the item
             addItem()
         }
     }
@@ -87,9 +86,9 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
     }
 
     private func changeItem() -> Void {
-        // get changed note instance
+        // Retrieve changed note instance
         if let changingsweetnote = self.changingsweetnote {
-            // change the note through note storage
+            // Change the note through note storage
             sweetnoteStorage.storage.changeNote(
                 noteToBeChanged: sweetnote(
                     noteId:        changingsweetnote.noteId,
@@ -99,18 +98,18 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
                     noteModified:  noteModifiedTimeStamp,
                     noteCategory:  noteCategoryTextField.text!)
             )
-            // navigate back to list of notes
+            // Navigate back to list of notes
             performSegue(
                 withIdentifier: "backToMasterView",
                 sender: self)
         } else {
-            // create alert
+            // Create alert
             let alert = UIAlertController(
                 title: "Unexpected error",
                 message: "Cannot change the note, unexpected error occurred. Try again later.",
                 preferredStyle: .alert)
             
-            // add OK action
+            // Add OK action
             alert.addAction(UIAlertAction(title: "OK", style: .default ) { (_) in self.performSegue(withIdentifier: "backToMasterView", sender: self)})
             // show alert
             self.present(alert, animated: true)
@@ -288,7 +287,7 @@ class sweetnoteCreateChangeViewController : UIViewController, UITextViewDelegate
         self.noteCategoryPicker.isHidden = true
         
         // Style the note done button with rounded corners
-        noteDoneButton.layer.cornerRadius = 8
+        noteDoneButton.layer.cornerRadius = 5
         
         // Set the toolbar within the note text view
         self.accessoryDoneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(self.didPressToolbarDone))

@@ -29,9 +29,12 @@ class DetailViewController: UIViewController {
         configureView()
         
         // Style the edit button with a border
-        editButton.layer.cornerRadius = 8
+        editButton.layer.cornerRadius = 5
         editButton.layer.borderWidth = 2
         editButton.layer.borderColor = UIColor.systemBlue.cgColor
+        
+        // Do not adjust title font size
+        //noteTitleLabel.adjustsFontSizeToFitWidth = false
     }
 
     var detailItem: sweetnote? {

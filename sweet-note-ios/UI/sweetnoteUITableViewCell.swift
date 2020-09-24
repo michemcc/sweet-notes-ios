@@ -11,4 +11,5 @@ class sweetnoteUITableViewCell : UITableViewCell {
     @IBOutlet weak var noteTextLabel: UILabel!
     @IBOutlet weak var noteDateLabel: UILabel!
     @IBOutlet weak var noteCategoryLabel: UILabel!
+    
 }

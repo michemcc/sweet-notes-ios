@@ -47,7 +47,7 @@ class sweetnoteCoreDataHelper {
             count += 1
         } catch let error as NSError {
             // TODO error handling
-            print("Could not save. \(error), \(error.userInfo)")
+            print("Could not save object. \(error), \(error.userInfo)")
         }
     }
     
@@ -88,7 +88,7 @@ class sweetnoteCoreDataHelper {
 
         } catch let error as NSError {
             // TODO error handling
-            print("Could not update sweetnote. \(error), \(error.userInfo)")
+            print("Could not update object. \(error), \(error.userInfo)")
         }
     }
     
@@ -120,7 +120,7 @@ class sweetnoteCoreDataHelper {
         // Set note count
         self.count = returnedNotes.count
         
-        // Return the notes sorted by modified date
+        // Sort by modified date
         return returnedNotes.sorted() {
             $0.noteModified > $1.noteModified
         }

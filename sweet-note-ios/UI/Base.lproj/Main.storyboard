@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -31,8 +31,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Title" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uh-6m-Vox">
-                                <rect key="frame" x="16" y="74" width="287" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Uh-6m-Vox">
+                                <rect key="frame" x="16.000000000000007" y="74" width="98.666666666666686" height="22"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,8 +67,8 @@
                                     <segue destination="pJp-4i-4zG" kind="show" identifier="showChangeNoteSegue" id="Qis-PK-fHa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-mk-Z9i">
-                                <rect key="frame" x="311" y="74" width="87" height="17.333333333333329"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEh-mk-Z9i">
+                                <rect key="frame" x="285.33333333333331" y="76.333333333333329" width="112.66666666666669" height="17.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,20 +78,19 @@
                         <constraints>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="lpY-fw-8fX" secondAttribute="trailing" constant="20" id="0bg-c5-vVu"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="Nkq-dP-66J" secondAttribute="trailing" constant="16" id="851-g1-FVd"/>
-                            <constraint firstAttribute="trailing" secondItem="wEh-mk-Z9i" secondAttribute="trailing" constant="16" id="9BM-LX-cxM"/>
                             <constraint firstItem="Zxg-qG-x94" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="GpF-vd-FMl"/>
                             <constraint firstItem="Zxg-qG-x94" firstAttribute="top" secondItem="Nkq-dP-66J" secondAttribute="bottom" constant="10" id="IEm-93-RZE"/>
                             <constraint firstItem="lpY-fw-8fX" firstAttribute="top" secondItem="Zxg-qG-x94" secondAttribute="bottom" constant="8" id="LGE-fm-hSg"/>
+                            <constraint firstItem="wEh-mk-Z9i" firstAttribute="centerY" secondItem="1Uh-6m-Vox" secondAttribute="centerY" id="MwI-yS-B6a"/>
                             <constraint firstItem="Nkq-dP-66J" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="Rqy-iR-bIS"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="Zxg-qG-x94" secondAttribute="trailing" constant="16" id="S6t-Ou-UHD"/>
+                            <constraint firstItem="wEh-mk-Z9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Uh-6m-Vox" secondAttribute="trailing" constant="16" id="T5h-J8-Ew6"/>
                             <constraint firstItem="1Uh-6m-Vox" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="18" id="Y21-1G-jMW"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="wEh-mk-Z9i" secondAttribute="trailing" constant="16" id="bcz-h4-T51"/>
                             <constraint firstItem="1Uh-6m-Vox" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="kic-Wa-9ng"/>
                             <constraint firstItem="lpY-fw-8fX" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="20" id="kua-1z-qbi"/>
                             <constraint firstItem="Nkq-dP-66J" firstAttribute="top" secondItem="1Uh-6m-Vox" secondAttribute="bottom" constant="10" id="s0a-dS-xTc"/>
-                            <constraint firstItem="wEh-mk-Z9i" firstAttribute="leading" secondItem="1Uh-6m-Vox" secondAttribute="trailing" constant="8" id="tuN-H5-fzC"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="bottom" secondItem="lpY-fw-8fX" secondAttribute="bottom" constant="20" id="uoc-dx-1A0"/>
-                            <constraint firstItem="wEh-mk-Z9i" firstAttribute="top" secondItem="1Uh-6m-Vox" secondAttribute="top" id="ybv-gK-ncs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
@@ -189,10 +188,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szX-xr-Yaj">
-                                <rect key="frame" x="16" y="146" width="382" height="140"/>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szX-xr-Yaj">
+                                <rect key="frame" x="16" y="146" width="382" height="158"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="jfW-3p-Q7O"/>
+                                    <constraint firstAttribute="height" constant="165" id="jfW-3p-Q7O"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="pJp-4i-4zG" id="6Rc-vH-fl1"/>
@@ -251,54 +250,56 @@
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="sweetnote" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WCw-Qf-5nD" customClass="sweetnoteUITableViewCell" customModule="sweetnote" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="104"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="WCw-Qf-5nD" customClass="sweetnoteUITableViewCell" customModule="sweetnote" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Title" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-X0-tnb">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBW-X0-tnb">
                                             <rect key="frame" x="16" y="14" width="88" height="20"/>
                                             <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ6-Ad-osu">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ6-Ad-osu">
                                             <rect key="frame" x="16" y="42" width="382" height="14.666666666666664"/>
                                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Text" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYm-Mu-hhO">
-                                            <rect key="frame" x="16" y="65.666666666666671" width="382" height="17.333333333333329"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Text" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYm-Mu-hhO">
+                                            <rect key="frame" x="16" y="65.666666666666686" width="382" height="17.333333333333329"/>
                                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Note Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFS-Me-Dvu">
-                                            <rect key="frame" x="263" y="15" width="116" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Note Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFS-Me-Dvu">
+                                            <rect key="frame" x="265.33333333333331" y="15.333333333333336" width="112.66666666666669" height="17.333333333333329"/>
                                             <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="eYm-Mu-hhO" secondAttribute="bottom" constant="12" id="5Qa-Fe-XuZ"/>
                                         <constraint firstAttribute="trailing" secondItem="cJ6-Ad-osu" secondAttribute="trailing" constant="16" id="Ady-Df-YRu"/>
                                         <constraint firstAttribute="trailing" secondItem="eYm-Mu-hhO" secondAttribute="trailing" constant="16" id="D5V-79-Qdk"/>
                                         <constraint firstItem="eYm-Mu-hhO" firstAttribute="top" secondItem="cJ6-Ad-osu" secondAttribute="bottom" constant="9" id="GwJ-7v-bpI"/>
-                                        <constraint firstItem="gFS-Me-Dvu" firstAttribute="top" secondItem="ZBW-X0-tnb" secondAttribute="top" id="Iv6-Ag-GMk"/>
                                         <constraint firstItem="cJ6-Ad-osu" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" constant="16" id="MHr-Cx-vp1"/>
-                                        <constraint firstItem="ZBW-X0-tnb" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" constant="14" id="YIs-xL-L9E"/>
+                                        <constraint firstItem="gFS-Me-Dvu" firstAttribute="centerY" secondItem="ZBW-X0-tnb" secondAttribute="centerY" id="Xhn-re-EWB"/>
+                                        <constraint firstItem="ZBW-X0-tnb" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" constant="10" id="YIs-xL-L9E"/>
                                         <constraint firstItem="cJ6-Ad-osu" firstAttribute="top" secondItem="ZBW-X0-tnb" secondAttribute="bottom" constant="8" id="ang-9X-48M"/>
                                         <constraint firstItem="ZBW-X0-tnb" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" constant="16" id="ezU-3j-THa"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="gFS-Me-Dvu" secondAttribute="trailing" constant="16" id="gaE-Ia-ROl"/>
+                                        <constraint firstItem="gFS-Me-Dvu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZBW-X0-tnb" secondAttribute="trailing" constant="16" id="iu5-7l-Kee"/>
                                         <constraint firstItem="eYm-Mu-hhO" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leading" constant="16" id="qEQ-y9-rOB"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -306,7 +307,7 @@
                                     <outlet property="noteCategoryLabel" destination="gFS-Me-Dvu" id="mue-U1-Wcs"/>
                                     <outlet property="noteDateLabel" destination="cJ6-Ad-osu" id="kB3-81-Xgn"/>
                                     <outlet property="noteTextLabel" destination="eYm-Mu-hhO" id="Ncz-oR-TOm"/>
-                                    <outlet property="noteTitleLabel" destination="ZBW-X0-tnb" id="cl2-rt-pD5"/>
+                                    <outlet property="noteTitleLabel" destination="ZBW-X0-tnb" id="cTD-cE-U8Q"/>
                                     <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
                                     <segue destination="pJp-4i-4zG" kind="show" identifier="showCreateNoteSegue" trigger="accessoryAction" id="FDD-dR-pLh"/>
                                 </connections>
@@ -347,6 +348,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
         <segue reference="I9d-PT-S2W"/>
-        <segue reference="Qis-PK-fHa"/>
+        <segue reference="FDD-dR-pLh"/>
     </inferredMetricsTieBreakers>
 </document>

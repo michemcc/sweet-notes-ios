@@ -10,8 +10,7 @@ class sweetnoteStorage {
     private var managedContextHasBeenSet : Bool = false
     
     private init() {
-        // we need to init our ManagedObjectContext
-        // This will be overwritten when setManagedContext is called from the view controller.
+        // Init the managed object context (to be overwritten by view controller)
         managedObjectContext = NSManagedObjectContext(
             concurrencyType: NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType)
     }
@@ -106,7 +105,6 @@ class sweetnoteStorage {
         }
     }
 
-    
     func count() -> Int {
         return sweetnoteCoreDataHelper.count
     }
