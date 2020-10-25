@@ -1,6 +1,6 @@
 import Foundation
 
-class sweetnote {
+class sweetnote: NSObject {
     
     private(set) var noteId        : UUID
     private(set) var noteTitle     : String
@@ -26,4 +26,5 @@ class sweetnote {
         self.noteModified  = noteModified
         self.noteCategory  = noteCategory
     }
+
 }

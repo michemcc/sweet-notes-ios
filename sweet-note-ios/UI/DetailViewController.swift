@@ -35,6 +35,9 @@ class DetailViewController: UIViewController {
         
         // Do not adjust title font size
         //noteTitleLabel.adjustsFontSizeToFitWidth = false
+        
+        // Do not display large title in the detail view
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
     }
 
     var detailItem: sweetnote? {

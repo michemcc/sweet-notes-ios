@@ -12,4 +12,17 @@ class sweetnoteUITableViewCell : UITableViewCell {
     @IBOutlet weak var noteDateLabel: UILabel!
     @IBOutlet weak var noteCategoryLabel: UILabel!
     
+    /*override var frame: CGRect {
+            get {
+                return super.frame
+            }
+            set {
+                let inset: CGFloat = 15
+                var frame = newValue
+                frame.origin.x += inset
+                frame.size.width -= 2 * inset
+                super.frame = frame
+            }
+        }*/
+    
 }

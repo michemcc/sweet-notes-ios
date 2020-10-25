@@ -114,7 +114,7 @@ class sweetnoteCoreDataHelper {
             }
         } catch let error as NSError {
             // TODO error handling
-            print("Could not read. \(error), \(error.userInfo)")
+            print("Could not read notes from core data. \(error), \(error.userInfo)")
         }
         
         // Set note count
@@ -149,7 +149,7 @@ class sweetnoteCoreDataHelper {
             )
         } catch let error as NSError {
             // TODO error handling
-            print("Could not read. \(error), \(error.userInfo)")
+            print("Could not read note from core data. \(error), \(error.userInfo)")
             return nil
         }
     }
